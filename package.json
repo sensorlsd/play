@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "all:test": "npx playwright test --project=chromium --headed",
-    "ui:test": "npx playwright test --project=chromium --ui",
-    "unique:test": " npx playwright test -g \"open localhost:4200\" --project=chromium --headed"
+    "e2e:tests": "npx playwright test --project=chromium --headed",
+    "e2e:ui:test": "npx playwright test --project=chromium --ui",
+    "e2e:unique:test": " npx playwright test -g \"open localhost:4200\" --project=chromium --headed",
+    "api:test": "npx playwright test --project=chromium"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.40.1",
-    "@types/node": "^20.10.6"
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^20.10.6",
+    "axios": "^1.6.5",
+    "ts-node": "^10.9.2"
   }
 }
